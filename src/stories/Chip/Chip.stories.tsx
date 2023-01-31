@@ -47,9 +47,7 @@ export const Clickable = () => {
 
   return (
     <Stack direction="row" spacing={1}>
-      {/* @ts-ignore */}
       <Chip label="Clickable" onClick={handleClick} />
-      {/* @ts-ignore */}
       <Chip label="Clickable" variant="outlined" onClick={handleClick} />
     </Stack>
   );
@@ -62,9 +60,7 @@ export function Deletable() {
 
   return (
     <Stack direction="row" spacing={1}>
-      {/* @ts-ignore */}
       <Chip label="Deletable" onDelete={handleDelete} />
-      {/* @ts-ignore */}
       <Chip label="Deletable" variant="outlined" onDelete={handleDelete} />
     </Stack>
   );
@@ -83,14 +79,12 @@ export function ClickableAndDeletable() {
     <Stack direction="row" spacing={1}>
       <Chip
         label="Clickable Deletable"
-        /* @ts-ignore */
         onClick={handleClick}
         onDelete={handleDelete}
       />
       <Chip
         label="Clickable Deletable"
         variant="outlined"
-        /* @ts-ignore */
         onClick={handleClick}
         onDelete={handleDelete}
       />
@@ -101,11 +95,9 @@ export function ClickableAndDeletable() {
 export function ClickableLink() {
   return (
     <Stack direction="row" spacing={1}>
-      {/* @ts-ignore TS2322: Type '{ label: string; component: string; href: string; clickable: true; }' is not assignable to type 'IntrinsicAttributes & { avatar?: ReactElement<any, string | JSXElementConstructor<any>>; children?: null; classes?: Partial<...>; ... 9 more ...; variant?: "outlined" | "filled"; } & CommonProps & Omit<...> & { ...; }'. */}
       <Chip label="Clickable Link" component="a" href="#basic-chip" clickable />
       <Chip
         label="Clickable Link"
-        /* @ts-ignore TS2322: Type '{ label: string; component: string; href: string; clickable: true; }' is not assignable to type 'IntrinsicAttributes & { avatar?: ReactElement<any, string | JSXElementConstructor<any>>; children?: null; classes?: Partial<...>; ... 9 more ...; variant?: "outlined" | "filled"; } & CommonProps & Omit<...> & { ...; }'. */
         component="a"
         href="#basic-chip"
         variant="outlined"
@@ -125,17 +117,15 @@ export function CustomDeleteIcon() {
   };
 
   return (
-    <Stack direction="row" spacing={1}>
+    <Stack direction="row" spacing={1} width="100%">
       <Chip
         label="Custom delete icon"
-        /* @ts-ignore */
         onClick={handleClick}
         onDelete={handleDelete}
         deleteIcon={<DoneIcon />}
       />
       <Chip
         label="Custom delete icon"
-        /* @ts-ignore */
         onClick={handleClick}
         onDelete={handleDelete}
         deleteIcon={<DeleteIcon />}
@@ -147,10 +137,12 @@ export function CustomDeleteIcon() {
 
 export function SizesChips() {
   return (
-    <Stack direction="row" spacing={1}>
-      <Chip label="Small" size="small" />
-      <Chip label="Small" size="small" variant="outlined" />
-    </Stack>
+    <Paper>
+      <Stack direction="row" spacing={1}>
+        <Chip label="Small" size="small" />
+        <Chip label="Small" size="small" variant="outlined" />
+      </Stack>
+    </Paper>
   );
 }
 
@@ -195,7 +187,6 @@ export function ChipsArray() {
         return (
           <ListItem key={data.key}>
             <Chip
-              /* @ts-ignore */
               icon={icon}
               label={data.label}
               onDelete={data.label === "React" ? undefined : handleDelete(data)}

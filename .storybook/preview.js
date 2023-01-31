@@ -2,6 +2,7 @@ import {
   CssBaseline,
   ThemeProvider,
   StyledEngineProvider,
+  Paper,
 } from "@mui/material";
 
 import { themes } from "@storybook/theming";
@@ -84,7 +85,9 @@ export const withMuiTheme = (Story, context) => {
     <StyledEngineProvider injectFirst>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Story />
+        <Paper sx={{ p: 5 }}>
+          <Story />
+        </Paper>
       </ThemeProvider>
     </StyledEngineProvider>
   );
