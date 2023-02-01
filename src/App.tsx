@@ -3,10 +3,12 @@ import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import ThemeProvider from "theme";
 import ThemeSettings from "theme/settings";
+import Custom from "components/Custom"
 import "./App.css";
 // import CanvasBlur from "./Canvasblur";
 const ButtonCom = () => {
   return (
+    <>
     <Stack spacing={2} direction="row">
       <Button variant="contained" size="large">
         Large
@@ -17,6 +19,8 @@ const ButtonCom = () => {
       </Button>
       <Typography variant={"AlertTitle"}>tyepg</Typography>
     </Stack>
+    <Custom /> 
+    </>
   );
 };
 function App() {

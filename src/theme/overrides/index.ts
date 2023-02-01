@@ -41,6 +41,7 @@ import ToggleButton from "./ToggleButton";
 import Tooltip from "./Tooltip";
 import TreeView from "./TreeView";
 import Typography from "./Typography";
+import ButtonBase from "./ButtonBase"
 
 // ----------------------------------------------------------------------
 
@@ -62,6 +63,7 @@ export default function ComponentsOverrides(theme: Theme) {
     Switch(theme),
     Select(),
     Button(theme),
+    ButtonBase(theme),
     Rating(theme),
     Dialog(theme),
     Avatar(theme),

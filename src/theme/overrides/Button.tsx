@@ -1,35 +1,33 @@
 // ----------------------------------------------------------------------
 
 import { Theme } from "@mui/material/styles";
+import { pxToRem } from "utils/getFontValue";
 
 export default function Button(theme: Theme) {
   return {
     MuiButton: {
       styleOverrides: {
         root: {
-          fontStyle: "normal",
-          fontFamily: "Source Sans Pro",
-          letterSpacing: "0px",
-          textDecoration: "none",
-          textTransform: "none",
-          borderRadius: "4px",
-          minWidth: "inherit",
           "&:hover": {},
         },
         sizeLarge: {
-          fontSize: "18px",
-          fontWeight: 400,
-          lineHeight: "26px",
+          ...theme.typography.buttonLarge,
+          padding: `${pxToRem(8)} ${pxToRem(30)}`,
+          borderRadius: `6px`,
+          height: `${pxToRem(42)}`,
         },
         sizeSmall: {
-          fontSize: "13px",
-          lineHeight: "22px",
-          fontWeight: 600,
+          ...theme.typography.buttonSmall,
+          padding: `${pxToRem(4)} ${pxToRem(10)}`,
+          borderRadius: `6px`,
+          height: `${pxToRem(30)}`,
+
         },
         sizeMedium: {
-          fontSize: "15px",
-          lineHeight: "24px",
-          fontWeight: 600,
+          ...theme.typography.buttonMedium,
+          padding: `${pxToRem(6)} ${pxToRem(16)}`,
+          borderRadius: `4px`,
+          height: `${pxToRem(36)}`,
         },
         defaultProps: "small",
         // contained
