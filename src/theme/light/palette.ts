@@ -1,6 +1,6 @@
 import { Palette } from "@mui/material/styles";
-import { defualtTheme } from "theme";
 import { commonPalleteColors } from "theme/common";
+import { defualtTheme } from "theme/palette";
 
 const defaultPalette = defualtTheme.palette;
 

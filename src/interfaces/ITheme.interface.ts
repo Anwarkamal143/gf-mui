@@ -1,6 +1,23 @@
 import { Color } from "@mui/material";
 import { CustomShadowType } from "theme/shadows";
-
+type ExtraTypography = {
+  buttonLarge: React.CSSProperties;
+  alertTitle: React.CSSProperties;
+  avatarInitials: React.CSSProperties;
+  badgeLabel: React.CSSProperties;
+  buttonMedium: React.CSSProperties;
+  buttonSmall: React.CSSProperties;
+  inputLabel: React.CSSProperties;
+  helperText: React.CSSProperties;
+  inputText: React.CSSProperties;
+  chip: React.CSSProperties;
+  tooltip: React.CSSProperties;
+  tableHeader: React.CSSProperties;
+  menuItem: React.CSSProperties;
+  menuItemDense: React.CSSProperties;
+  listSubheader: React.CSSProperties;
+  bottomNavigationActiveLabel: React.CSSProperties;
+};
 type CommonColorShades = {
   "4p": string;
   "8p": string;
@@ -110,6 +127,10 @@ declare module "@mui/material/styles" {
     primary_shades?: Partial<TextTypeShades>;
     secondarys_shades?: Partial<TextTypeShades>;
   }
+  interface TypographyVariants extends ExtraTypography {}
+
+  // allow configuration using `createTheme`
+  interface TypographyVariantsOptions extends ExtraTypography {}
   // interface grey extends Color {
   //   GF50?: string;
   //   GF100?: string;
@@ -120,6 +141,22 @@ declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {
     muted: true;
     article: true;
+    ButtonLarge: true;
+    AlertTitle: true;
+    AvatarInitials: true;
+    BadgeLabel: true;
+    ButtonMedium: true;
+    ButtonSmall: true;
+    InputLabel: true;
+    HelperText: true;
+    InputText: true;
+    Chip: true;
+    Tooltip: true;
+    TableHeader: true;
+    MenuItem: true;
+    MenuItemDense: true;
+    ListSubheader: true;
+    BottomNavigationActiveLabel: true;
     // h3: false;
   }
 }

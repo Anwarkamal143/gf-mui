@@ -7,10 +7,8 @@ export default function Accordion(theme: Theme) {
     MuiAccordion: {
       styleOverrides: {
         root: {
-          "&.Mui-expanded": {
-          },
-          "&.Mui-disabled": {
-          },
+          "&.Mui-expanded": {},
+          "&.Mui-disabled": {},
         },
       },
     },
@@ -18,12 +16,10 @@ export default function Accordion(theme: Theme) {
       styleOverrides: {
         root: {
           "&.Mui-disabled": {
-            "& .MuiTypography-root": {
-            },
+            "& .MuiTypography-root": {},
           },
         },
-        expandIconWrapper: {
-        },
+        expandIconWrapper: {},
       },
     },
   };
