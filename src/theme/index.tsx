@@ -12,7 +12,7 @@ import useSettings from "hooks/useSettings";
 //
 import breakpoints from "./breakpoints";
 import componentsOverride from "./overrides";
-import palette, { defualtTheme } from "./palette";
+import palette from "./palette";
 import shadows, { customShadows } from "./shadows";
 import typography from "./typography";
 
@@ -21,7 +21,9 @@ import typography from "./typography";
 type IThemeProvider = {
   children: ReactNode;
 };
-
+export const defualtTheme = createTheme({
+  spacing: (factor: number) => `${0.25 * factor}rem`,
+});
 export default function ThemeProvider({ children }: IThemeProvider) {
   const { themeMode, themeDirection } = useSettings();
 

@@ -1,5 +1,5 @@
-import Button from "@mui/material/Button";
 import type { ComponentMeta, ComponentStory } from "@storybook/react";
+import Button from "components/Button";
 export default {
   title: "Components/Button",
   component: Button,

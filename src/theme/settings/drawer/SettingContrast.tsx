@@ -43,7 +43,7 @@ export default function SettingContrast() {
                 sx={{
                   ...(isSelected && {
                     color: "primary.main",
-                    boxShadow: (theme) => theme.customShadows.z20,
+                    boxShadow: (theme) => theme.customShadows[20],
                   }),
                 }}
               >

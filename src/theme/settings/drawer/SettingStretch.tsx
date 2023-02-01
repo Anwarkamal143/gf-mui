@@ -50,7 +50,7 @@ export default function SettingStretch() {
           borderRadius: 1,
           color: "action.active",
           bgcolor: "background.default",
-          boxShadow: (theme) => theme.customShadows.z12,
+          boxShadow: (theme) => theme.customShadows[10],
           transition: (theme) => theme.transitions.create("width"),
           ...(themeStretch && {
             width: 1,

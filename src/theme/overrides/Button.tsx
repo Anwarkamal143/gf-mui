@@ -19,28 +19,28 @@ export default function Button(theme: Theme) {
         // contained
         containedInherit: {
           color: theme.palette.grey[800],
-          boxShadow: theme.customShadows.z8,
+          boxShadow: theme.customShadows[8],
           "&:hover": {
             backgroundColor: theme.palette.grey[400],
           },
         },
         containedPrimary: {
-          boxShadow: theme.customShadows.primary,
+          boxShadow: theme.customShadows[1],
         },
         containedSecondary: {
-          boxShadow: theme.customShadows.secondary,
+          boxShadow: theme.customShadows[2],
         },
         containedInfo: {
-          boxShadow: theme.customShadows.info,
+          boxShadow: theme.customShadows[4],
         },
         containedSuccess: {
-          boxShadow: theme.customShadows.success,
+          boxShadow: theme.customShadows[1],
         },
         containedWarning: {
-          boxShadow: theme.customShadows.warning,
+          boxShadow: theme.customShadows[1],
         },
         containedError: {
-          boxShadow: theme.customShadows.error,
+          boxShadow: theme.customShadows[1],
         },
         // outlined
         outlinedInherit: {

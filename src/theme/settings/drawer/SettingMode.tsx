@@ -40,7 +40,7 @@ export default function SettingMode() {
                   bgcolor: mode === "light" ? "common.white" : "grey.800",
                   ...(isSelected && {
                     color: "primary.main",
-                    boxShadow: (theme) => theme.customShadows.z20,
+                    boxShadow: (theme) => theme.customShadows[20],
                   }),
                 }}
               >
