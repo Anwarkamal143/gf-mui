@@ -18,11 +18,7 @@ export default function Alert(theme: Theme) {
   });
 
   const outlinedStyle = (color: PaletteColorKeys) => ({
-    color: theme.palette[color][isLight ? "darker" : "lighter"],
-    border: `solid 1px ${theme.palette[color][isLight ? "light" : "dark"]}`,
-    backgroundColor: theme.palette[color][isLight ? "lighter" : "darker"],
     "& .MuiAlert-icon": {
-      color: theme.palette[color][isLight ? "main" : "light"],
     },
   });
 
@@ -40,12 +36,10 @@ export default function Alert(theme: Theme) {
       styleOverrides: {
         message: {
           "& .MuiAlertTitle-root": {
-            marginBottom: theme.spacing(0.5),
           },
         },
         action: {
           "& button:not(:first-of-type)": {
-            marginLeft: theme.spacing(1),
           },
         },
 

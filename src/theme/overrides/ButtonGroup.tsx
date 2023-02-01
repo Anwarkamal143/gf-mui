@@ -5,7 +5,6 @@ import { Theme } from "@mui/material/styles";
 export default function ButtonGroup(theme: Theme) {
   const styleContained = (color: PaletteColorKeys) => ({
     props: { variant: "contained", color },
-    style: { boxShadow: theme.customShadows[color] },
   });
 
   return {
@@ -13,7 +12,6 @@ export default function ButtonGroup(theme: Theme) {
       variants: [
         {
           props: { variant: "contained", color: "inherit" },
-          style: { boxShadow: theme.customShadows.z8 },
         },
         styleContained("primary"),
         styleContained("secondary"),
@@ -25,12 +23,8 @@ export default function ButtonGroup(theme: Theme) {
         {
           props: { disabled: true },
           style: {
-            boxShadow: "none",
             "& .MuiButtonGroup-grouped.Mui-disabled": {
-              color: theme.palette.action.disabled,
-              borderColor: `${theme.palette.action.disabledBackground} !important`,
               "&.MuiButton-contained": {
-                backgroundColor: theme.palette.action.disabledBackground,
               },
             },
           },
@@ -40,7 +34,6 @@ export default function ButtonGroup(theme: Theme) {
       styleOverrides: {
         root: {
           "&:hover": {
-            boxShadow: "none",
           },
         },
       },
