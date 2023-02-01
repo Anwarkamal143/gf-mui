@@ -1,5 +1,6 @@
 import { Palette } from "@mui/material/styles";
 import { darkPallete } from "./dark";
+import { lightPallete } from "./light";
 
 // ----------------------------------------------------------------------
 
@@ -9,7 +10,7 @@ function createGradient(color1: string, color2: string) {
 
 // SETUP COLORS
 const palette: Record<string, Palette> = {
-  light: darkPallete,
+  light: lightPallete,
 
   dark: darkPallete,
 };

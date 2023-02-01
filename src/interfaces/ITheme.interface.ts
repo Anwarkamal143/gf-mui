@@ -9,7 +9,8 @@ type CommonColorShades = {
   "100p": string;
 };
 type ColorShades = {
-  "8p": string;
+  "4p"?: string;
+  "8p"?: string;
   "12p": string;
   "16p"?: string;
   "30p": string;
@@ -19,9 +20,11 @@ type ColorShades = {
 };
 type TextTypeShades = {
   "4p": string;
+  "8p": string;
   "12p": string;
   "18p": string;
   "30p": string;
+  "50p": string;
 };
 type OtherPaletteProperties = {
   divider: string;
@@ -31,6 +34,7 @@ type OtherPaletteProperties = {
   snackbar: string;
   ratingActive: string;
   focusRingColor: string;
+  backdropOverlay?: string;
 };
 declare module "@mui/material/styles" {
   interface Theme {
@@ -103,8 +107,8 @@ declare module "@mui/material/styles" {
   }
   interface TypeText {
     muted?: string;
-    primary_shades?: Pick<TextTypeShades, "4p" | "12p" | "30p">;
-    secondarys_shades?: Pick<TextTypeShades, "4p" | "18p">;
+    primary_shades?: Partial<TextTypeShades>;
+    secondarys_shades?: Partial<TextTypeShades>;
   }
   // interface grey extends Color {
   //   GF50?: string;

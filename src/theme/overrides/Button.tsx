@@ -9,36 +9,25 @@ export default function Button(theme: Theme) {
     MuiButton: {
       styleOverrides: {
         root: {
-          "&:hover": {
-          },
+          "&:hover": {},
         },
-        sizeLarge: {
-        },
+        sizeLarge: {},
         // contained
         containedInherit: {
-          "&:hover": {
-          },
+          "&:hover": {},
         },
-        containedPrimary: {
-        },
-        containedSecondary: {
-        },
-        containedInfo: {
-        },
-        containedSuccess: {
-        },
-        containedWarning: {
-        },
-        containedError: {
-        },
+        containedPrimary: {},
+        containedSecondary: {},
+        containedInfo: {},
+        containedSuccess: {},
+        containedWarning: {},
+        containedError: {},
         // outlined
         outlinedInherit: {
-          "&:hover": {
-          },
+          "&:hover": {},
         },
         textInherit: {
-          "&:hover": {
-          },
+          "&:hover": {},
         },
       },
     },
