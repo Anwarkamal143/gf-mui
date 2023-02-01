@@ -5,52 +5,26 @@ export default function Tabs(theme: Theme) {
   return {
     MuiTabs: {
       styleOverrides: {
-        scrollButtons: {
-          width: 48,
-          borderRadius: "50%",
-        },
+        scrollButtons: {},
       },
     },
     MuiTab: {
       styleOverrides: {
         root: {
-          padding: 0,
-          fontWeight: theme.typography.fontWeightMedium,
-          borderTopLeftRadius: theme.shape.borderRadius,
-          borderTopRightRadius: theme.shape.borderRadius,
-          "&.Mui-selected": {
-            color: theme.palette.text.primary,
-          },
-          "&:not(:last-of-type)": {
-            marginRight: theme.spacing(5),
-          },
-          "@media (min-width: 600px)": {
-            minWidth: 48,
-          },
+          "&.Mui-selected": {},
+          "&:not(:last-of-type)": {},
+          "@media (min-width: 600px)": {},
         },
         labelIcon: {
-          minHeight: 48,
-          flexDirection: "row",
-          "& > *:first-of-type": {
-            marginBottom: 0,
-            marginRight: theme.spacing(1),
-          },
+          "& > *:first-of-type": {},
         },
-        wrapped: {
-          flexDirection: "row",
-          whiteSpace: "nowrap",
-        },
-        textColorInherit: {
-          opacity: 1,
-          color: theme.palette.text.secondary,
-        },
+        wrapped: {},
+        textColorInherit: {},
       },
     },
     MuiTabPanel: {
       styleOverrides: {
-        root: {
-          padding: 0,
-        },
+        root: {},
       },
     },
   };

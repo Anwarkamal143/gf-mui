@@ -1,16 +1,10 @@
 import { Theme } from "@mui/material/styles";
-import { ErrorIcon, InfoIcon, SuccessIcon, WarningIcon } from "./CustomIcons";
 
 // ----------------------------------------------------------------------
 
 export default function Alert(theme: Theme) {
-  const isLight = theme.palette.mode === "light";
   const standardStyle = (color: PaletteColorKeys) => ({
-    color: theme.palette[color][isLight ? "darker" : "lighter"],
-    backgroundColor: theme.palette[color][isLight ? "lighter" : "darker"],
-    "& .MuiAlert-icon": {
-      color: theme.palette[color][isLight ? "main" : "light"],
-    },
+    "& .MuiAlert-icon": {},
   });
 
   const filledStyle = (color: PaletteColorKeys) => ({
@@ -18,29 +12,21 @@ export default function Alert(theme: Theme) {
   });
 
   const outlinedStyle = (color: PaletteColorKeys) => ({
-    "& .MuiAlert-icon": {
-    },
+    "& .MuiAlert-icon": {},
   });
 
   return {
     MuiAlert: {
       defaultProps: {
-        iconMapping: {
-          info: <InfoIcon />,
-          success: <SuccessIcon />,
-          warning: <WarningIcon />,
-          error: <ErrorIcon />,
-        },
+        iconMapping: {},
       },
 
       styleOverrides: {
         message: {
-          "& .MuiAlertTitle-root": {
-          },
+          "& .MuiAlertTitle-root": {},
         },
         action: {
-          "& button:not(:first-of-type)": {
-          },
+          "& button:not(:first-of-type)": {},
         },
 
         standardInfo: standardStyle("info"),

@@ -1,22 +1,13 @@
-import { alpha, Theme } from "@mui/material/styles";
+import { Theme } from "@mui/material/styles";
 
 // ----------------------------------------------------------------------
 
 export default function ToggleButton(theme: Theme) {
-  const pallete: any = theme.palette.grey;
   const style = (color: PaletteColorKeys) => ({
     props: { color },
     style: {
-      "&:hover": {
-        borderColor: alpha(theme.palette[color].main, 0.48),
-        backgroundColor: alpha(
-          theme.palette[color].main,
-          theme.palette.action.hoverOpacity
-        ),
-      },
-      "&.Mui-selected": {
-        borderColor: alpha(theme.palette[color].main, 0.48),
-      },
+      "&:hover": {},
+      "&.Mui-selected": {},
     },
   });
 
@@ -26,9 +17,7 @@ export default function ToggleButton(theme: Theme) {
         {
           props: { color: "standard" },
           style: {
-            "&.Mui-selected": {
-              backgroundColor: theme.palette.action.selected,
-            },
+            "&.Mui-selected": {},
           },
         },
         style("primary"),
@@ -42,14 +31,7 @@ export default function ToggleButton(theme: Theme) {
     MuiToggleButtonGroup: {
       styleOverrides: {
         root: {
-          borderRadius: theme.shape.borderRadius,
-          backgroundColor: theme.palette.background.paper,
-          border: `solid 1px ${pallete[500_12]}`,
-          "& .MuiToggleButton-root": {
-            margin: 4,
-            borderColor: "transparent !important",
-            borderRadius: `${theme.shape.borderRadius}px !important`,
-          },
+          "& .MuiToggleButton-root": {},
         },
       },
     },

@@ -5,34 +5,20 @@ import { Theme } from "@mui/material/styles";
 export default function Fab(theme: Theme) {
   return {
     MuiFab: {
-      defaultProps: {
-        color: "primary",
-      },
+      defaultProps: {},
 
       styleOverrides: {
         root: {
-          boxShadow: theme.customShadows.z8,
-          "&:hover": {
-            boxShadow: "none",
-            backgroundColor: theme.palette.grey[400],
-          },
+          "&:hover": {},
         },
         primary: {
-          boxShadow: theme.customShadows.primary,
-          "&:hover": {
-            backgroundColor: theme.palette.primary.dark,
-          },
+          "&:hover": {},
         },
         secondary: {
-          boxShadow: theme.customShadows.secondary,
-          "&:hover": {
-            backgroundColor: theme.palette.secondary.dark,
-          },
+          "&:hover": {},
         },
         extended: {
-          "& svg": {
-            marginRight: theme.spacing(1),
-          },
+          "& svg": {},
         },
       },
     },

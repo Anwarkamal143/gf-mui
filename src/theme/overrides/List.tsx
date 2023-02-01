@@ -5,31 +5,18 @@ export default function List(theme: Theme) {
   return {
     MuiListItemIcon: {
       styleOverrides: {
-        root: {
-          color: "inherit",
-          minWidth: "auto",
-          marginRight: theme.spacing(2),
-        },
+        root: {},
       },
     },
     MuiListItemAvatar: {
       styleOverrides: {
-        root: {
-          minWidth: "auto",
-          marginRight: theme.spacing(2),
-        },
+        root: {},
       },
     },
     MuiListItemText: {
       styleOverrides: {
-        root: {
-          marginTop: 0,
-          marginBottom: 0,
-        },
-        multiline: {
-          marginTop: 0,
-          marginBottom: 0,
-        },
+        root: {},
+        multiline: {},
       },
     },
   };

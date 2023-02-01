@@ -119,9 +119,3 @@ declare module "@mui/material/Typography" {
     // h3: false;
   }
 }
-declare module "@mui/material/Colors" {
-  interface grey extends Color {
-    GF50?: string;
-    GF100?: string;
-  }
-}

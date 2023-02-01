@@ -1,63 +1,44 @@
 // ----------------------------------------------------------------------
 import { Theme } from "@mui/material/styles";
 export default function Input(theme: Theme) {
-  const grayPallete: any = theme.palette.grey;
   return {
     MuiInputBase: {
       styleOverrides: {
         root: {
           "&.Mui-disabled": {
-            "& svg": { color: theme.palette.text.disabled },
+            "& svg": {},
           },
         },
         input: {
-          "&::placeholder": {
-            opacity: 1,
-            color: theme.palette.text.disabled,
-          },
+          "&::placeholder": {},
         },
       },
     },
     MuiInput: {
       styleOverrides: {
         underline: {
-          "&:before": {
-            borderBottomColor: grayPallete[500_56],
-          },
+          "&:before": {},
         },
       },
     },
     MuiFilledInput: {
       styleOverrides: {
         root: {
-          backgroundColor: grayPallete[500_12],
-          "&:hover": {
-            backgroundColor: grayPallete[500_16],
-          },
-          "&.Mui-focused": {
-            backgroundColor: theme.palette.action.focus,
-          },
-          "&.Mui-disabled": {
-            backgroundColor: theme.palette.action.disabledBackground,
-          },
+          "&:hover": {},
+          "&.Mui-focused": {},
+          "&.Mui-disabled": {},
         },
         underline: {
-          "&:before": {
-            borderBottomColor: grayPallete[500_56],
-          },
+          "&:before": {},
         },
       },
     },
     MuiOutlinedInput: {
       styleOverrides: {
         root: {
-          "& .MuiOutlinedInput-notchedOutline": {
-            borderColor: grayPallete[500_32],
-          },
+          "& .MuiOutlinedInput-notchedOutline": {},
           "&.Mui-disabled": {
-            "& .MuiOutlinedInput-notchedOutline": {
-              borderColor: theme.palette.action.disabledBackground,
-            },
+            "& .MuiOutlinedInput-notchedOutline": {},
           },
         },
       },

@@ -2,9 +2,10 @@ import { createTheme } from "@mui/material";
 
 import { deepmerge } from "@mui/utils";
 import { useMemo } from "react";
+import { defualtTheme } from "theme";
 import breakpoints from "theme/breakpoints";
 import componentsOverride from "theme/overrides";
-import palette, { defualtTheme } from "theme/palette";
+import palette from "theme/palette";
 import shadows, { customShadows } from "theme/shadows";
 import typography from "theme/typography";
 type Props = {

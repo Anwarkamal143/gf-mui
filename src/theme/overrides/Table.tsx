@@ -7,67 +7,33 @@ export default function Table(theme: Theme) {
       styleOverrides: {
         root: {
           "&.Mui-selected": {
-            backgroundColor: theme.palette.action.selected,
-            "&:hover": {
-              backgroundColor: theme.palette.action.hover,
-            },
+            "&:hover": {},
           },
         },
       },
     },
     MuiTableCell: {
       styleOverrides: {
-        root: {
-          borderBottom: "none",
-        },
+        root: {},
         head: {
-          color: theme.palette.text.secondary,
-          backgroundColor: theme.palette.background.neutral,
-          "&:first-of-type": {
-            paddingLeft: theme.spacing(3),
-            borderTopLeftRadius: theme.shape.borderRadius,
-            borderBottomLeftRadius: theme.shape.borderRadius,
-            boxShadow: `inset 8px 0 0 ${theme.palette.background.paper}`,
-          },
-          "&:last-of-type": {
-            paddingRight: theme.spacing(3),
-            borderTopRightRadius: theme.shape.borderRadius,
-            borderBottomRightRadius: theme.shape.borderRadius,
-            boxShadow: `inset -8px 0 0 ${theme.palette.background.paper}`,
-          },
+          "&:first-of-type": {},
+          "&:last-of-type": {},
         },
-        stickyHeader: {
-          backgroundColor: theme.palette.background.paper,
-          backgroundImage: `linear-gradient(to bottom, ${theme.palette.background.neutral} 0%, ${theme.palette.background.neutral} 100%)`,
-        },
+        stickyHeader: {},
         body: {
-          "&:first-of-type": {
-            paddingLeft: theme.spacing(3),
-          },
-          "&:last-of-type": {
-            paddingRight: theme.spacing(3),
-          },
+          "&:first-of-type": {},
+          "&:last-of-type": {},
         },
       },
     },
     MuiTablePagination: {
       styleOverrides: {
-        root: {
-          borderTop: `solid 1px ${theme.palette.divider}`,
-        },
-        toolbar: {
-          height: 64,
-        },
+        root: {},
+        toolbar: {},
         select: {
-          "&:focus": {
-            borderRadius: theme.shape.borderRadius,
-          },
+          "&:focus": {},
         },
-        selectIcon: {
-          width: 20,
-          height: 20,
-          marginTop: -4,
-        },
+        selectIcon: {},
       },
     },
   };

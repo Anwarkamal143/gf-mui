@@ -4,14 +4,10 @@ import { Theme } from "@mui/material/styles";
 export default function Skeleton(theme: Theme) {
   return {
     MuiSkeleton: {
-      defaultProps: {
-        animation: "wave",
-      },
+      defaultProps: {},
 
       styleOverrides: {
-        root: {
-          backgroundColor: theme.palette.background.neutral,
-        },
+        root: {},
       },
     },
   };
