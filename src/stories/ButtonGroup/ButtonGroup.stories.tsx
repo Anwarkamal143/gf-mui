@@ -16,15 +16,25 @@ export default {
   component: ButtonGroup,
 } as ComponentMeta<typeof ButtonGroup>;
 
-export const Default: ComponentStory<typeof ButtonGroup> = ({variant="contained", ...rest}) => (
-  <ButtonGroup variant={variant} aria-label="outlined primary button group" {...rest}>
-    <Button>One</Button>
-    <Button>Two</Button>
-    <Button>Three</Button>
-  </ButtonGroup>
-);
+export const Default: ComponentStory<typeof ButtonGroup> = (props) => {
+  const { variant = "contained", ...rest } = props;
+  return (
+    <ButtonGroup
+      variant={variant}
+      aria-label="outlined primary button group"
+      {...rest}
+    >
+      <Button>One</Button>
+      <Button>Two</Button>
+      <Button>Three</Button>
+    </ButtonGroup>
+  );
+};
 
-export const VariantButtonGroup: ComponentStory<typeof ButtonGroup> = () => {
+export const VariantButtonGroup: ComponentStory<typeof ButtonGroup> = (
+  props
+) => {
+  const { variant = "outlined", ...rest } = props;
   return (
     <Box
       sx={{
@@ -36,7 +46,11 @@ export const VariantButtonGroup: ComponentStory<typeof ButtonGroup> = () => {
         },
       }}
     >
-      <ButtonGroup variant="outlined" aria-label="outlined button group">
+      <ButtonGroup
+        variant={variant}
+        aria-label="outlined button group"
+        {...rest}
+      >
         <Button>One</Button>
         <Button>Two</Button>
         <Button>Three</Button>
@@ -56,7 +70,7 @@ const buttons = [
   <Button key="three">Three</Button>,
 ];
 
-export function GroupSizesColors() {
+export const GroupSizesColors: ComponentStory<typeof ButtonGroup> = (props) => {
   return (
     <Box
       sx={{
@@ -79,9 +93,9 @@ export function GroupSizesColors() {
       </ButtonGroup>
     </Box>
   );
-}
+};
 
-export function GroupOrientation() {
+export const GroupOrientation: ComponentStory<typeof ButtonGroup> = (props) => {
   return (
     <Box
       sx={{
@@ -113,7 +127,7 @@ export function GroupOrientation() {
       </ButtonGroup>
     </Box>
   );
-}
+};
 
 const options = [
   "Create a merge commit",
@@ -162,7 +176,7 @@ export function SplitButton() {
       >
         <Button onClick={handleClick}>{options[selectedIndex]}</Button>
         <Button
-          size="small"
+          // size="small"
           aria-controls={open ? "split-button-menu" : undefined}
           aria-expanded={open ? "true" : undefined}
           aria-label="select merge strategy"
