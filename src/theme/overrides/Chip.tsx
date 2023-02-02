@@ -7,8 +7,18 @@ export default function Chip(theme: Theme) {
   return {
     MuiChip: {
       defaultProps: {},
-
       styleOverrides: {
+        root: {
+          fontStyle: 'normal',
+          // fontFamily: 'Source Sans Pro',
+          fontWeight: 400,
+          fontSize: '13px',
+          letterSpacing: '0px',
+          textDecoration: 'none',
+          lineHeight: '18px',
+          textTransform: 'none',
+        },
+        
         colorDefault: {
           "& .MuiChip-avatarMedium, .MuiChip-avatarSmall": {},
         },

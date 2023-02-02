@@ -32,7 +32,7 @@ export default function ThemeProvider({ children }: IThemeProvider) {
       palette: isLight ? palette.light : palette.dark,
       typography,
       breakpoints,
-      shape: { ...defualtTheme.shape, borderRadius: 8 },
+      shape: { ...defualtTheme.shape},
       direction: themeDirection,
       shadows: isLight ? shadows.light : shadows.dark,
       customShadows: isLight ? customShadows.light : customShadows.dark,
