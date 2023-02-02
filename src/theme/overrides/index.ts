@@ -44,11 +44,13 @@ import TreeView from "./TreeView";
 import Typography from "./Typography";
 import ButtonBase from "./ButtonBase"
 import AppBar from "./AppBar"
+import Modal from "./Modal"
 
 // ----------------------------------------------------------------------
 
 export default function ComponentsOverrides(theme: Theme) {
   return Object.assign(
+    Modal(theme),
     Fab(theme),
     Tabs(theme),
     Chip(theme),

@@ -1,5 +1,7 @@
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import GrainIcon from "@mui/icons-material/Grain";
+import Modal from '@mui/material/Modal';
+import Box from '@mui/material/Box';
 import HomeIcon from "@mui/icons-material/Home";
 import WhatshotIcon from "@mui/icons-material/Whatshot";
 import Autocomplete from "@mui/material/Autocomplete";
@@ -20,8 +22,22 @@ import Link from "@mui/material/Link";
 import Stack from "@mui/material/Stack";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
+import {useState} from "react";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
+const style = {
+  position: 'absolute' as 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 400,
+  bgcolor: 'background.paper',
+  borderRadius: '4px',
+  boxShadow: 24,
+  pt: 2,
+  px: 4,
+  pb: 3,
+};
 export default function Index() {
   const top100Films = [
     { title: "The Shawshank Redemption", year: 1994 },
@@ -150,8 +166,29 @@ export default function Index() {
     { title: "3 Idiots", year: 2009 },
     { title: "Monty Python and the Holy Grail", year: 1975 },
   ];
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => {
+    setOpen(true);
+  };
+  const handleClose = () => {
+    setOpen(false);
+  };
   return (
     <div>
+      <Button onClick={handleOpen}>Open modal</Button>
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="parent-modal-title"
+        aria-describedby="parent-modal-description"
+      >
+        <Box sx={{ ...style, width: 400 }}>
+          <h2 id="parent-modal-title">Text in a modal</h2>
+          <p id="parent-modal-description">
+            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+          </p>
+        </Box>
+      </Modal>
       <AvatarGroup>
         <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
         <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
