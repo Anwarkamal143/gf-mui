@@ -16,8 +16,8 @@ export default {
   component: ButtonGroup,
 } as ComponentMeta<typeof ButtonGroup>;
 
-export const Default: ComponentStory<typeof ButtonGroup> = () => (
-  <ButtonGroup variant="contained" aria-label="outlined primary button group">
+export const Default: ComponentStory<typeof ButtonGroup> = ({variant="contained", ...rest}) => (
+  <ButtonGroup variant={variant} aria-label="outlined primary button group" {...rest}>
     <Button>One</Button>
     <Button>Two</Button>
     <Button>Three</Button>

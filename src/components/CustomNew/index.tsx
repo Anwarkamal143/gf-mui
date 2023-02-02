@@ -14,6 +14,15 @@ import WhatshotIcon from '@mui/icons-material/Whatshot';
 import GrainIcon from '@mui/icons-material/Grain';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Grid from '@mui/material/Grid';
+import Container from '@mui/material/Container';
+import Checkbox from '@mui/material/Checkbox';
+const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
+
 
 export default function Index() {
   const top100Films = [
@@ -227,6 +236,49 @@ export default function Index() {
           <ArrowDropDownIcon />
         </Button>
       </ButtonGroup>
+      <Card sx={{ maxWidth: 345 }}>
+      <CardMedia
+        sx={{ height: 140 }}
+        image="/static/images/cards/contemplative-reptile.jpg"
+        title="green iguana"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Lizard
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          Lizards are a widespread group of squamate reptiles, with over 6,000
+          species, ranging across all continents except Antarctica
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Share</Button>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
+    <Container fixed>
+      <Grid container spacing={2}>
+        <Grid item xs={6} md={8}>
+          xs=6 md=8
+        </Grid>
+        <Grid item xs={6} md={4}>
+          xs=6 md=4
+        </Grid>
+        <Grid item xs={6} md={4}>
+          xs=6 md=4
+        </Grid>
+        <Grid item xs={6} md={8}>
+          xs=6 md=8
+        </Grid>
+      </Grid>
+      </Container>
+
+      <div>
+      <Checkbox {...label} defaultChecked />
+      <Checkbox {...label} />
+      <Checkbox {...label} disabled />
+      <Checkbox {...label} disabled checked />
+    </div>
     </div>
   );
 }
