@@ -11,7 +11,7 @@ export const lightPallete: Palette = {
     main: "rgba(140, 59, 45, 1)",
     light: "rgba(151, 78, 65, 1)",
     dark: "rgba(112, 47, 36, 1)",
-    contrastText: "rgba(255, 255, 255, 0.87)",
+    contrastText: "rgba(255, 255, 255, 1)",
     shades: {
       "4p": "rgba(140, 59, 45, 0.04)",
       "8p": "rgba(140, 59, 45, 0.08)",
@@ -51,8 +51,8 @@ export const lightPallete: Palette = {
   warning: {
     main: "rgba(161, 146, 5, 1)",
     light: "rgba(180, 169, 63, 1)",
-    dark: "rgba(137, 124, 4, 1)",
-    contrastText: "rgba(0, 0, 0, 0.87)",
+    dark: "rgba(113, 102, 4, 1)",
+    contrastText: "rgba(255, 255, 255, 1)",
     shades: {
       "4p": "rgba(161, 146, 5, 0.04)",
       "12p": "rgba(161, 146, 5, 0.12)",
@@ -66,9 +66,9 @@ export const lightPallete: Palette = {
     main: "rgba(18, 166, 25, 1)",
     light: "rgba(72, 184, 78, 1)",
     dark: "rgba(15, 141, 21, 1)",
-    contrastText: "rgba(0, 0, 0, 0.87)",
+    contrastText: "rgba(255, 255, 255, 1)",
     shades: {
-      "8p": "rgba(18, 166, 25, 0.08)",
+      "4p": "rgba(18, 166, 25, 0.04)",
       "12p": "rgba(18, 166, 25, 0.12)",
       "30p": "rgba(18, 166, 25, 0.3)",
       "50p": "rgba(18, 166, 25, 0.5)",
@@ -99,12 +99,12 @@ export const lightPallete: Palette = {
 
   action: {
     ...defaultPalette.action,
+    active: "rgba(0, 0, 0, 0.54)",
     hover: "rgba(0, 0, 0, 0.04)",
-    disabledBackground: "rgba(0, 0, 0, 0.12)",
-    focus: "rgba(0, 0, 0, 0.12)",
     selected: "rgba(0, 0, 0, 0.08)",
     disabled: "rgba(0, 0, 0, 0.26)",
-    active: "rgba(0, 0, 0, 0.54)",
+    disabledBackground: "rgba(0, 0, 0, 0.12)",
+    focus: "rgba(0, 0, 0, 0.12)",
   },
   background: {
     ...defualtTheme.palette.background,

@@ -12,6 +12,7 @@ export const darkPallete: Palette = {
     light: "rgba(151, 78, 65, 1)",
     dark: "rgba(112, 47, 36, 1)",
     contrastText: "rgba(255, 255, 255, 0.87)",
+
     shades: {
       "8p": "rgba(140, 59, 45, 0.08)",
       "12p": "rgba(140, 59, 45, 0.12)",
