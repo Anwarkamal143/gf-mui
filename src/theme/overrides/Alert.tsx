@@ -8,7 +8,7 @@ export default function Alert(theme: Theme) {
   });
 
   const filledStyle = (color: PaletteColorKeys) => ({
-    color: theme.palette[color].contrastText,
+    // color: theme.palette[color].contrastText,
   });
 
   const outlinedStyle = (color: PaletteColorKeys) => ({
@@ -22,27 +22,32 @@ export default function Alert(theme: Theme) {
       },
 
       styleOverrides: {
+        root: {
+          borderRadius: '4px',
+        },
         message: {
-          "& .MuiAlertTitle-root": {},
+          "& .MuiAlertTitle-root": {
+            // ...theme.components?.MuiAlertTitle
+          },
         },
         action: {
           "& button:not(:first-of-type)": {},
         },
 
-        standardInfo: standardStyle("info"),
-        standardSuccess: standardStyle("success"),
-        standardWarning: standardStyle("warning"),
-        standardError: standardStyle("error"),
+        // standardInfo: standardStyle("info"),
+        // standardSuccess: standardStyle("success"),
+        // standardWarning: standardStyle("warning"),
+        // standardError: standardStyle("error"),
 
-        filledInfo: filledStyle("info"),
-        filledSuccess: filledStyle("success"),
-        filledWarning: filledStyle("warning"),
-        filledError: filledStyle("error"),
+        // filledInfo: filledStyle("info"),
+        // filledSuccess: filledStyle("success"),
+        // filledWarning: filledStyle("warning"),
+        // filledError: filledStyle("error"),
 
-        outlinedInfo: outlinedStyle("info"),
-        outlinedSuccess: outlinedStyle("success"),
-        outlinedWarning: outlinedStyle("warning"),
-        outlinedError: outlinedStyle("error"),
+        // outlinedInfo: outlinedStyle("info"),
+        // outlinedSuccess: outlinedStyle("success"),
+        // outlinedWarning: outlinedStyle("warning"),
+        // outlinedError: outlinedStyle("error"),
       },
     },
   };

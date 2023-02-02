@@ -1,6 +1,7 @@
 import { Theme } from "@mui/material/styles";
 import Accordion from "./Accordion";
 import Alert from "./Alert";
+import AlertTitle from "./AlertTitle";
 import Autocomplete from "./Autocomplete";
 import Avatar from "./Avatar";
 import Backdrop from "./Backdrop";
@@ -50,6 +51,7 @@ export default function ComponentsOverrides(theme: Theme) {
     Fab(theme),
     Tabs(theme),
     Chip(theme),
+    AlertTitle(theme),
     Card(theme),
     Menu(theme),
     Link(),

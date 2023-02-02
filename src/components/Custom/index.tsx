@@ -94,7 +94,7 @@ export default function Index() {
         </Accordion>
         </div>
         <Stack sx={{ width: '100%' }} spacing={2}>
-      <Alert severity="error">
+      <Alert variant='filled' severity="error">
         <AlertTitle>Error</AlertTitle>
         This is an error alert — <strong>check it out!</strong>
       </Alert>
