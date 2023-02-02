@@ -6,7 +6,7 @@ export default function ButtonBase(theme: Theme) {
   return {
     MuiButtonBase: {
       defaultProps: {
-        disableRipple: true,
+        // disableRipple: true,
       },
     },
   };
