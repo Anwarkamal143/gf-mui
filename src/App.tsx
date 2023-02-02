@@ -1,27 +1,29 @@
 import { Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
+import ButtonAppBar from "components/Appbar";
+import Custom from "components/Custom";
+import CustomNew from "components/CustomNew";
 import ThemeProvider from "theme";
 import ThemeSettings from "theme/settings";
-import Custom from "components/Custom"
-import CustomNew from "components/CustomNew"
 import "./App.css";
 // import CanvasBlur from "./Canvasblur";
 const ButtonCom = () => {
   return (
     <>
-    <Stack spacing={2} direction="row">
-      <Button variant="contained" size="large">
-        Large
-      </Button>
-      <Button variant="contained">Medium</Button>
-      <Button variant="contained" size="small">
-        Small
-      </Button>
-      <Typography variant={"AlertTitle"}>tyepg</Typography>
-    </Stack>
-    <Custom /> 
-    <CustomNew /> 
+      <Stack spacing={2} direction="row">
+        <Button variant="contained" size="large">
+          Large
+        </Button>
+        <Button variant="contained">Medium</Button>
+        <Button variant="contained" size="small">
+          Small
+        </Button>
+        <Typography variant={"AlertTitle"}>tyepg</Typography>
+      </Stack>
+      <ButtonAppBar />
+      <Custom />
+      <CustomNew />
     </>
   );
 };
