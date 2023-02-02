@@ -1,4 +1,7 @@
+import { defualtTheme } from "theme/palette";
 const typography = {
+  ...defualtTheme.typography,
+  fontFamily: "Source Sans Pro, sans-serif",
   h1: {
     fontStyle: "normal",
     fontFamily: "Source Sans Pro",
