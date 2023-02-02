@@ -4,6 +4,7 @@ import Stack from "@mui/material/Stack";
 import ThemeProvider from "theme";
 import ThemeSettings from "theme/settings";
 import Custom from "components/Custom"
+import CustomNew from "components/CustomNew"
 import "./App.css";
 // import CanvasBlur from "./Canvasblur";
 const ButtonCom = () => {
@@ -20,6 +21,7 @@ const ButtonCom = () => {
       <Typography variant={"AlertTitle"}>tyepg</Typography>
     </Stack>
     <Custom /> 
+    <CustomNew /> 
     </>
   );
 };
