@@ -160,3 +160,9 @@ declare module "@mui/material/Typography" {
     // h3: false;
   }
 }
+
+declare module '@mui/material/AvatarGroup' {
+  interface ButtonPropsVariantOverrides {
+    dashed: true;
+  }
+}
