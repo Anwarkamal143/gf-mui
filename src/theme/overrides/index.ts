@@ -43,6 +43,7 @@ import Tooltip from "./Tooltip";
 import TreeView from "./TreeView";
 import Typography from "./Typography";
 import ButtonBase from "./ButtonBase"
+import AppBar from "./AppBar"
 
 // ----------------------------------------------------------------------
 
@@ -56,6 +57,7 @@ export default function ComponentsOverrides(theme: Theme) {
     Menu(theme),
     Link(),
     Input(theme),
+    AppBar(theme),
     Radio(theme),
     Badge(),
     Lists(theme),
