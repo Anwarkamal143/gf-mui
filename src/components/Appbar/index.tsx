@@ -84,11 +84,11 @@ function AppBar(props: IAppBarProps) {
           >
             {title}
           </Typography>
-          <Stack direction={"row"} alignItems={"center"}>
+          <Stack direction={"row"} alignItems={"center"} ml="auto">
             <Stack
               direction={"row"}
               alignItems={"center"}
-              display={{ sm: "none", md: "flex" }}
+              display={{ xs: "none", md: "flex" }}
             >
               <Search>
                 <SearchIconWrapper>
