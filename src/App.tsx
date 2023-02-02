@@ -6,6 +6,7 @@ import TextField from "@mui/material/TextField";
 import ButtonAppBar from "components/Appbar";
 import Badge from "components/Badge";
 import Custom from "components/Custom";
+import CustomNew from "components/CustomNew";
 import ThemeProvider from "theme";
 import ThemeSettings from "theme/settings";
 import "./App.css";
@@ -163,6 +164,7 @@ const ButtonCom = () => {
         sx={{ width: 300 }}
         renderInput={(params) => <TextField {...params} label="Movie" />}
       />
+      <CustomNew />
     </>
   );
 };
