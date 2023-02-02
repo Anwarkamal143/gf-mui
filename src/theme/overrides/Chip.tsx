@@ -6,7 +6,8 @@ export default function Chip(theme: Theme) {
   // theme.palette.grey.
   return {
     MuiChip: {
-      defaultProps: {},
+      defaultProps: {
+      },
       styleOverrides: {
         root: {
           fontStyle: 'normal',
