@@ -8,7 +8,7 @@ import palette, { defualtTheme } from "theme/palette";
 import shadows, { customShadows } from "theme/shadows";
 import typography from "theme/typography";
 type Props = {
-  themeMode: "light" | "dark";
+  themeMode?: "light" | "dark";
   themeDirection: "ltr" | "rtl";
 };
 
