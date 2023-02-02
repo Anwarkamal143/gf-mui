@@ -6,7 +6,7 @@ const defaultPalette = defualtTheme.palette;
 
 export const lightPallete: Palette = {
   ...defaultPalette,
-  mode: "dark",
+  mode: "light",
   primary: {
     main: "rgba(140, 59, 45, 1)",
     light: "rgba(151, 78, 65, 1)",

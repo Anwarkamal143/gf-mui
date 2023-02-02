@@ -4,7 +4,7 @@ import { createTheme, Palette } from "@mui/material/styles";
 
 // ----------------------------------------------------------------------
 export const defualtTheme = createTheme({
-  spacing: (factor: number) => `${0.25 * factor}rem`,
+  // spacing: (factor: number) => `${0.25 * factor}rem`,
 });
 
 // SETUP COLORS
