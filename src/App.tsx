@@ -1,7 +1,7 @@
 import { Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
-import BottomNavigation from "components/ButtomNavigation";
+import SimpleBottomNavigation from "components/ButtomNavigation";
 import Custom from "components/Custom";
 import CustomNew from "components/CustomNew";
 import ThemeProvider from "theme";
@@ -22,7 +22,7 @@ const ButtonCom = () => {
         </Button>
         <Typography variant={"AlertTitle"}>tyepg</Typography>
       </Stack>
-      <BottomNavigation />
+      <SimpleBottomNavigation />
 
       <Custom />
 
