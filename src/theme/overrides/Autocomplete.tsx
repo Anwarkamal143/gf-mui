@@ -11,11 +11,10 @@ export default function Autocomplete(theme: Theme) {
           "& .MuiAutocomplete-option": {},
         },
       },
-      
-      MuiChip: {
-        defaultProps: {
+      defaultProps: {
+        ChipProps: {
           size: "small"
-        },
+        }
       },
     },
   };
