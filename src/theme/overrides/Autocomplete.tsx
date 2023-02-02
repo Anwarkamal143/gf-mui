@@ -6,11 +6,9 @@ export default function Autocomplete(theme: Theme) {
   return {
     MuiAutocomplete: {
       styleOverrides: {
-        paper: {
-        },
+        paper: {},
         listbox: {
-          "& .MuiAutocomplete-option": {
-          },
+          "& .MuiAutocomplete-option": {},
         },
       },
     },
