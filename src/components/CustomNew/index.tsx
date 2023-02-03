@@ -49,6 +49,7 @@ import { CustomPaginationActionsTable } from "stories/Table/Table.stories";
 import { BasicTabs } from "stories/Tabs/Tabs.stories";
 import { AlternateTimeline } from "stories/Timeline/Timeline.stories";
 import { ToggleButtons } from "stories/ToggleButton/ToggleButton.stories";
+import { BasicTooltip } from "stories/Tooltip/Tooltip.stories";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 const style = {
@@ -384,6 +385,7 @@ export default function Index() {
       <MultilineTextFields />
       <AlternateTimeline />
       <ToggleButtons />
+      <BasicTooltip />
       {/* <MiniDrawer /> */}
     </div>
   );
