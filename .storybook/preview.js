@@ -85,7 +85,7 @@ export const withMuiTheme = (Story, context) => {
     <StyledEngineProvider injectFirst>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Paper sx={{ p: 5 }}>
+        <Paper sx={{ p: 5 }} id="story-parent">
           <Story />
         </Paper>
       </ThemeProvider>
