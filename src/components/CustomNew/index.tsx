@@ -50,6 +50,8 @@ import { BasicTabs } from "stories/Tabs/Tabs.stories";
 import { AlternateTimeline } from "stories/Timeline/Timeline.stories";
 import { ToggleButtons } from "stories/ToggleButton/ToggleButton.stories";
 import { BasicTooltip } from "stories/Tooltip/Tooltip.stories";
+import { MuiTransferList } from "stories/TransferList/TransferList.stories";
+import { BasicTreeView } from "stories/TreeView/TreeView.stories";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 const style = {
@@ -386,6 +388,8 @@ export default function Index() {
       <AlternateTimeline />
       <ToggleButtons />
       <BasicTooltip />
+      <MuiTransferList />
+      <BasicTreeView />
       {/* <MiniDrawer /> */}
     </div>
   );
