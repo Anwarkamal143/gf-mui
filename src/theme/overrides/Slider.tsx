@@ -9,6 +9,15 @@ export default function Slider(theme: Theme) {
       styleOverrides: {
         root: {
           "&.Mui-disabled": {},
+          '.MuiSlider-track': {
+            height: '6px',
+          },
+
+          '&.MuiSlider-vertical ': {
+            '.MuiSlider-track': {
+              width: '6px'
+            }
+          },
         },
         markLabel: {},
         valueLabel: {},
