@@ -3,6 +3,7 @@ import GrainIcon from "@mui/icons-material/Grain";
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
 import HomeIcon from "@mui/icons-material/Home";
+import Slider from '@mui/material/Slider';
 import WhatshotIcon from "@mui/icons-material/Whatshot";
 import Autocomplete from "@mui/material/Autocomplete";
 import Avatar from "@mui/material/Avatar";
@@ -30,6 +31,13 @@ import { MiddleDividers } from "stories/Divider/Divider.stories";
 import { ProgressLinear } from "stories/Progress/Progess.stories";
 import { SimplePaper } from "stories/Paper/examples";
 import { RadioButtons, RadioButtonsGroup } from "stories/RadioButton/RadioButton.stories";
+import RatingStories, { BasicRating } from "stories/Rating/Rating.stories";
+import SelectStories from "stories/Select/Select.stories";
+import Select from "theme/overrides/Select";
+import { SelectC } from "stories/Select/Select";
+import SkeletonStories, { YouTube, Variants } from "stories/Skeleton/Skeleton.stories";
+import Skeleton from "theme/overrides/Skeleton";
+import { SimpleSnackbar } from "stories/Snackbar/Snackbar.stories";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 const style = {
@@ -338,6 +346,23 @@ export default function Index() {
       <SimplePaper />
       <RadioButtons />
       <RadioButtonsGroup />
+      <Variants />
+      <SelectC />
+      <Stack sx={{ height: 300 }} spacing={1} direction="row">
+        <Slider
+          aria-label="Temperature"
+          defaultValue={30}
+          orientation="vertical"
+          // getAriaValueText={valuetext}
+          valueLabelDisplay="auto"
+          step={10}
+          marks
+          min={10}
+          max={110}
+        />
+       </Stack>
+      <Slider defaultValue={30} step={10} marks min={10} max={110} disabled />
+      <SimpleSnackbar />
       {/* <MiniDrawer /> */}
     </div>
   );
