@@ -30,6 +30,8 @@ import { MiddleDividers } from "stories/Divider/Divider.stories";
 import { ProgressLinear } from "stories/Progress/Progess.stories";
 import { SimplePaper } from "stories/Paper/examples";
 import { RadioButtons, RadioButtonsGroup } from "stories/RadioButton/RadioButton.stories";
+import { BasicRating } from "stories/Skeleton/Skeleton.stories";
+import RatingStories from "stories/Rating/Rating.stories";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 const style = {
@@ -338,6 +340,7 @@ export default function Index() {
       <SimplePaper />
       <RadioButtons />
       <RadioButtonsGroup />
+      <BasicRating />
       {/* <MiniDrawer /> */}
     </div>
   );

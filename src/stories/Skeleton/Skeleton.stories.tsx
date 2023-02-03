@@ -22,6 +22,8 @@ export const BasicRating = () => {
       <Rating
         name='simple-controlled'
         value={value}
+        size="small"
+        precision={0.5}
         onChange={(event, newValue) => {
           setValue(newValue);
         }}
