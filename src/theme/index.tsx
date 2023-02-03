@@ -14,12 +14,12 @@ import useSettings from "hooks/useSettings";
 //
 import { LocalizationProvider } from "@mui/x-date-pickers";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import type {} from "@mui/x-date-pickers/themeAugmentation";
 import breakpoints from "./breakpoints";
 import componentsOverride from "./overrides";
 import palette, { defualtTheme } from "./palette";
 import shadows, { customShadows } from "./shadows";
 import typography from "./typography";
-import type {} from '@mui/x-date-pickers/themeAugmentation';
 
 // ----------------------------------------------------------------------
 
