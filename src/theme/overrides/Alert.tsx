@@ -1,19 +1,19 @@
-import { Theme } from "@mui/material/styles";
+import { Theme } from '@mui/material/styles';
 
 // ----------------------------------------------------------------------
 
 export default function Alert(theme: Theme) {
-  const standardStyle = (color: PaletteColorKeys) => ({
-    "& .MuiAlert-icon": {},
-  });
+  // const standardStyle = (color: PaletteColorKeys) => ({
+  //   "& .MuiAlert-icon": {},
+  // });
 
-  const filledStyle = (color: PaletteColorKeys) => ({
-    // color: theme.palette[color].contrastText,
-  });
+  // const filledStyle = (color: PaletteColorKeys) => ({
+  //   // color: theme.palette[color].contrastText,
+  // });
 
-  const outlinedStyle = (color: PaletteColorKeys) => ({
-    "& .MuiAlert-icon": {},
-  });
+  // const outlinedStyle = (color: PaletteColorKeys) => ({
+  //   "& .MuiAlert-icon": {},
+  // });
 
   return {
     MuiAlert: {
@@ -26,12 +26,12 @@ export default function Alert(theme: Theme) {
           borderRadius: '4px',
         },
         message: {
-          "& .MuiAlertTitle-root": {
+          '& .MuiAlertTitle-root': {
             // ...theme.components?.MuiAlertTitle
           },
         },
         action: {
-          "& button:not(:first-of-type)": {},
+          '& button:not(:first-of-type)': {},
         },
 
         // standardInfo: standardStyle("info"),

@@ -1,14 +1,11 @@
 import { Theme } from '@mui/material/styles';
-
 // ----------------------------------------------------------------------
 
-export default function Backdrop(theme: Theme) {
+export default function Drawer(theme: Theme) {
   return {
-    MuiBackdrop: {
+    MuiDivider: {
       styleOverrides: {
-        root: {
-          '&.MuiBackdrop-invisible': {},
-        },
+        modal: {},
       },
     },
   };
