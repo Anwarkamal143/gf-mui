@@ -3,6 +3,7 @@ import GrainIcon from "@mui/icons-material/Grain";
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
 import HomeIcon from "@mui/icons-material/Home";
+import Slider from '@mui/material/Slider';
 import WhatshotIcon from "@mui/icons-material/Whatshot";
 import Autocomplete from "@mui/material/Autocomplete";
 import Avatar from "@mui/material/Avatar";
@@ -346,6 +347,20 @@ export default function Index() {
       <RadioButtonsGroup />
       <Variants />
       <SelectC />
+      <Stack sx={{ height: 300 }} spacing={1} direction="row">
+        <Slider
+          aria-label="Temperature"
+          defaultValue={30}
+          orientation="vertical"
+          // getAriaValueText={valuetext}
+          valueLabelDisplay="auto"
+          step={10}
+          marks
+          min={10}
+          max={110}
+        />
+       </Stack>
+      <Slider defaultValue={30} step={10} marks min={10} max={110} disabled />
       {/* <MiniDrawer /> */}
     </div>
   );
