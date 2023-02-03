@@ -27,6 +27,7 @@ import MiniDrawer from "stories/Drawer/Drawers/MiniVariant";
 import { BasicPagination, PaginationOutlined, PaginationRounded } from "stories/Pagination/Pagination.stories";
 import DialogStories, { MuiDialog } from "stories/Dialog/Dialog.stories";
 import { MiddleDividers } from "stories/Divider/Divider.stories";
+import { ProgressLinear } from "stories/Progress/Progess.stories";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 const style = {
@@ -331,6 +332,7 @@ export default function Index() {
       <BasicPagination />
       <MuiDialog />
       <MiddleDividers />
+      <ProgressLinear />
       {/* <MiniDrawer /> */}
     </div>
   );
