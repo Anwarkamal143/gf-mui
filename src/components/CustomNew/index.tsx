@@ -24,6 +24,7 @@ import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import {useState} from "react";
 import MiniDrawer from "stories/Drawer/Drawers/MiniVariant";
+import { BasicPagination, PaginationOutlined, PaginationRounded } from "stories/Pagination/Pagination.stories";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 const style = {
@@ -323,7 +324,10 @@ export default function Index() {
         <Checkbox {...label} disabled />
         <Checkbox {...label} disabled checked />
       </div>
-      <MiniDrawer />
+      <PaginationOutlined />
+      <PaginationRounded />
+      <BasicPagination />
+      {/* <MiniDrawer /> */}
     </div>
   );
 }

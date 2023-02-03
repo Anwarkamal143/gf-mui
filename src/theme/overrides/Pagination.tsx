@@ -7,6 +7,7 @@ export default function Pagination(theme: Theme) {
     MuiPaginationItem: {
       styleOverrides: {
         root: {
+          margin: '0 3px',
           "&.Mui-selected": {},
         },
         textPrimary: {
