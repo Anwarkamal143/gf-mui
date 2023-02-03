@@ -47,6 +47,7 @@ import { SimpleSnackbar } from "stories/Snackbar/Snackbar.stories";
 import { HorizontalLinearStepper } from "stories/Stepper/Stepper.stories";
 import { CustomPaginationActionsTable } from "stories/Table/Table.stories";
 import { BasicTabs } from "stories/Tabs/Tabs.stories";
+import { AlternateTimeline } from "stories/Timeline/Timeline.stories";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 const style = {
@@ -380,6 +381,7 @@ export default function Index() {
       <CustomPaginationActionsTable />
       <BasicTabs />
       <MultilineTextFields />
+      <AlternateTimeline />
       {/* <MiniDrawer /> */}
     </div>
   );
