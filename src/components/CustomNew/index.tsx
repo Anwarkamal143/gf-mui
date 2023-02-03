@@ -16,16 +16,20 @@ import CardMedia from "@mui/material/CardMedia";
 import Checkbox from "@mui/material/Checkbox";
 import Chip from "@mui/material/Chip";
 import Container from "@mui/material/Container";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import FormGroup from "@mui/material/FormGroup";
 import Grid from "@mui/material/Grid";
 import Link from "@mui/material/Link";
 import Modal from "@mui/material/Modal";
 import Slider from "@mui/material/Slider";
 import Stack from "@mui/material/Stack";
+import Switch from "@mui/material/Switch";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import { useState } from "react";
 import { MuiDialog } from "stories/Dialog/Dialog.stories";
 import { MiddleDividers } from "stories/Divider/Divider.stories";
+import { MultilineTextFields } from "stories/Multiline/Multiline.stories";
 import {
   BasicPagination,
   PaginationOutlined,
@@ -41,6 +45,8 @@ import { SelectC } from "stories/Select/Select";
 import { Variants } from "stories/Skeleton/Skeleton.stories";
 import { SimpleSnackbar } from "stories/Snackbar/Snackbar.stories";
 import { HorizontalLinearStepper } from "stories/Stepper/Stepper.stories";
+import { CustomPaginationActionsTable } from "stories/Table/Table.stories";
+import { BasicTabs } from "stories/Tabs/Tabs.stories";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 const style = {
@@ -367,6 +373,13 @@ export default function Index() {
       <Slider defaultValue={30} step={10} marks min={10} max={110} disabled />
       <SimpleSnackbar />
       <HorizontalLinearStepper />
+      <FormGroup>
+        <FormControlLabel control={<Switch defaultChecked />} label="Label" />
+        <FormControlLabel disabled control={<Switch />} label="Disabled" />
+      </FormGroup>
+      <CustomPaginationActionsTable />
+      <BasicTabs />
+      <MultilineTextFields />
       {/* <MiniDrawer /> */}
     </div>
   );
