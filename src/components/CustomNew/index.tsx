@@ -44,7 +44,10 @@ import {
 import { SelectC } from "stories/Select/Select";
 import { Variants } from "stories/Skeleton/Skeleton.stories";
 import { SimpleSnackbar } from "stories/Snackbar/Snackbar.stories";
-import { HorizontalLinearStepper } from "stories/Stepper/Stepper.stories";
+import {
+  DotsMobileStepper,
+  HorizontalLinearStepper,
+} from "stories/Stepper/Stepper.stories";
 import { CustomPaginationActionsTable } from "stories/Table/Table.stories";
 import { BasicTabs } from "stories/Tabs/Tabs.stories";
 import { AlternateTimeline } from "stories/Timeline/Timeline.stories";
@@ -379,6 +382,7 @@ export default function Index() {
       <Slider defaultValue={30} step={10} marks min={10} max={110} disabled />
       <SimpleSnackbar />
       <HorizontalLinearStepper />
+      <DotsMobileStepper />
       <FormGroup>
         <FormControlLabel control={<Switch defaultChecked />} label="Label" />
         <FormControlLabel disabled control={<Switch />} label="Disabled" />
