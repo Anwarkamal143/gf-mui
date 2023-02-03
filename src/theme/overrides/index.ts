@@ -45,6 +45,7 @@ import Typography from "./Typography";
 import ButtonBase from "./ButtonBase";
 import AppBar from "./AppBar";
 import Modal from "./Modal";
+import DatePicker from "./DatePicker";
 
 // ----------------------------------------------------------------------
 
@@ -53,6 +54,7 @@ export default function ComponentsOverrides(theme: Theme) {
     Modal(theme),
     Fab(theme),
     Tabs(theme),
+    DatePicker(theme),
     Chip(theme),
     AlertTitle(theme),
     Card(theme),
