@@ -15,7 +15,7 @@ export const SelectC = (props: SelectProps) => {
     };
     return (
         <>
-        <FormControl fullWidth>
+        <FormControl fullWidth color="error">
             <InputLabel id="demo-simple-select-label">Age</InputLabel>
             <Select
                 labelId="demo-simple-select-label"
