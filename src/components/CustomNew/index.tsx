@@ -37,6 +37,7 @@ import Select from "theme/overrides/Select";
 import { SelectC } from "stories/Select/Select";
 import SkeletonStories, { YouTube, Variants } from "stories/Skeleton/Skeleton.stories";
 import Skeleton from "theme/overrides/Skeleton";
+import { SimpleSnackbar } from "stories/Snackbar/Snackbar.stories";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 const style = {
@@ -361,6 +362,7 @@ export default function Index() {
         />
        </Stack>
       <Slider defaultValue={30} step={10} marks min={10} max={110} disabled />
+      <SimpleSnackbar />
       {/* <MiniDrawer /> */}
     </div>
   );
