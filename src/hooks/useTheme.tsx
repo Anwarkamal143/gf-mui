@@ -7,6 +7,7 @@ import componentsOverride from "theme/overrides";
 import palette, { defualtTheme } from "theme/palette";
 import shadows, { customShadows } from "theme/shadows";
 import typography from "theme/typography";
+import type {} from '@mui/x-date-pickers/themeAugmentation';
 type Props = {
   themeMode?: "light" | "dark";
   themeDirection: "ltr" | "rtl";

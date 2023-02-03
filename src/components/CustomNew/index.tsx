@@ -23,6 +23,7 @@ import Stack from "@mui/material/Stack";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import {useState} from "react";
+import MiniDrawer from "stories/Drawer/Drawers/MiniVariant";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 const style = {
@@ -322,6 +323,7 @@ export default function Index() {
         <Checkbox {...label} disabled />
         <Checkbox {...label} disabled checked />
       </div>
+      <MiniDrawer />
     </div>
   );
 }
