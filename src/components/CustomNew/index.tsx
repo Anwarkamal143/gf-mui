@@ -48,6 +48,7 @@ import { HorizontalLinearStepper } from "stories/Stepper/Stepper.stories";
 import { CustomPaginationActionsTable } from "stories/Table/Table.stories";
 import { BasicTabs } from "stories/Tabs/Tabs.stories";
 import { AlternateTimeline } from "stories/Timeline/Timeline.stories";
+import { ToggleButtons } from "stories/ToggleButton/ToggleButton.stories";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 const style = {
@@ -382,6 +383,7 @@ export default function Index() {
       <BasicTabs />
       <MultilineTextFields />
       <AlternateTimeline />
+      <ToggleButtons />
       {/* <MiniDrawer /> */}
     </div>
   );
