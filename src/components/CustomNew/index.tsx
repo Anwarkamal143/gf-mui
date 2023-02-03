@@ -52,6 +52,7 @@ import { ToggleButtons } from "stories/ToggleButton/ToggleButton.stories";
 import { BasicTooltip } from "stories/Tooltip/Tooltip.stories";
 import { MuiTransferList } from "stories/TransferList/TransferList.stories";
 import { BasicTreeView } from "stories/TreeView/TreeView.stories";
+import { SimpleTypography } from "stories/Typography/Typography.stories";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 const style = {
@@ -390,6 +391,7 @@ export default function Index() {
       <BasicTooltip />
       <MuiTransferList />
       <BasicTreeView />
+      <SimpleTypography />
       {/* <MiniDrawer /> */}
     </div>
   );

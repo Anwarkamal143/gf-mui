@@ -396,7 +396,7 @@ export const commonTypography = {
     fontSize: "12px",
     letterSpacing: "0px",
     textDecoration: "none",
-    lineHeight: "266.00000858306885%",
+    lineHeight: "157%",
     textTransform: "uppercase",
   },
   caption: {
