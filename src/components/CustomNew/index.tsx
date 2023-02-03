@@ -32,6 +32,9 @@ import { SimplePaper } from "stories/Paper/examples";
 import { RadioButtons, RadioButtonsGroup } from "stories/RadioButton/RadioButton.stories";
 import { BasicRating } from "stories/Skeleton/Skeleton.stories";
 import RatingStories from "stories/Rating/Rating.stories";
+import SelectStories from "stories/Select/Select.stories";
+import Select from "theme/overrides/Select";
+import { SelectC } from "stories/Select/Select";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 const style = {
@@ -341,6 +344,7 @@ export default function Index() {
       <RadioButtons />
       <RadioButtonsGroup />
       <BasicRating />
+      <SelectC />
       {/* <MiniDrawer /> */}
     </div>
   );

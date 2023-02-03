@@ -3,6 +3,8 @@ import Box from '@mui/material/Box';
 import Rating from '@mui/material/Rating';
 import Typography from '@mui/material/Typography';
 import { ComponentMeta } from '@storybook/react';
+import Select from 'theme/overrides/Select';
+import SelectInput from '@mui/material/Select/SelectInput';
 
 export default {
   title: 'Components/Rating',
