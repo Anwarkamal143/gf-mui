@@ -29,6 +29,7 @@ import DialogStories, { MuiDialog } from "stories/Dialog/Dialog.stories";
 import { MiddleDividers } from "stories/Divider/Divider.stories";
 import { ProgressLinear } from "stories/Progress/Progess.stories";
 import { SimplePaper } from "stories/Paper/examples";
+import { RadioButtons, RadioButtonsGroup } from "stories/RadioButton/RadioButton.stories";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 const style = {
@@ -335,6 +336,8 @@ export default function Index() {
       <MiddleDividers />
       <ProgressLinear />
       <SimplePaper />
+      <RadioButtons />
+      <RadioButtonsGroup />
       {/* <MiniDrawer /> */}
     </div>
   );
