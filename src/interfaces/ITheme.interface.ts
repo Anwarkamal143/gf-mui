@@ -1,4 +1,5 @@
 import { Color } from "@mui/material";
+import type {} from "@mui/x-date-pickers/themeAugmentation";
 import { CustomShadowType } from "theme/shadows";
 type ExtraTypography = {
   buttonLarge: React.CSSProperties;
@@ -161,7 +162,7 @@ declare module "@mui/material/Typography" {
   }
 }
 
-declare module '@mui/material/AvatarGroup' {
+declare module "@mui/material/AvatarGroup" {
   interface ButtonPropsVariantOverrides {
     dashed: true;
   }

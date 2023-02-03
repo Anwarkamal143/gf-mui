@@ -23,7 +23,7 @@ const useTheme = (props: Props) => {
       palette: isLight ? palette.light : palette.dark,
       typography,
       breakpoints,
-      shape: { ...defualtTheme.shape},
+      shape: { ...defualtTheme.shape },
       direction: themeDirection,
       shadows: isLight ? shadows.light : shadows.dark,
       customShadows: isLight ? customShadows.light : customShadows.dark,
