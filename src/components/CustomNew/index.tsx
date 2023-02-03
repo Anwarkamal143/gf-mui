@@ -30,11 +30,12 @@ import { MiddleDividers } from "stories/Divider/Divider.stories";
 import { ProgressLinear } from "stories/Progress/Progess.stories";
 import { SimplePaper } from "stories/Paper/examples";
 import { RadioButtons, RadioButtonsGroup } from "stories/RadioButton/RadioButton.stories";
-import { BasicRating } from "stories/Skeleton/Skeleton.stories";
-import RatingStories from "stories/Rating/Rating.stories";
+import RatingStories, { BasicRating } from "stories/Rating/Rating.stories";
 import SelectStories from "stories/Select/Select.stories";
 import Select from "theme/overrides/Select";
 import { SelectC } from "stories/Select/Select";
+import SkeletonStories, { YouTube, Variants } from "stories/Skeleton/Skeleton.stories";
+import Skeleton from "theme/overrides/Skeleton";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 const style = {
@@ -343,7 +344,7 @@ export default function Index() {
       <SimplePaper />
       <RadioButtons />
       <RadioButtonsGroup />
-      <BasicRating />
+      <Variants />
       <SelectC />
       {/* <MiniDrawer /> */}
     </div>
