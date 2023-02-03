@@ -1,13 +1,11 @@
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import GrainIcon from "@mui/icons-material/Grain";
-import Modal from '@mui/material/Modal';
-import Box from '@mui/material/Box';
 import HomeIcon from "@mui/icons-material/Home";
-import Slider from '@mui/material/Slider';
 import WhatshotIcon from "@mui/icons-material/Whatshot";
 import Autocomplete from "@mui/material/Autocomplete";
 import Avatar from "@mui/material/Avatar";
 import AvatarGroup from "@mui/material/AvatarGroup";
+import Box from "@mui/material/Box";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Button from "@mui/material/Button";
 import ButtonGroup from "@mui/material/ButtonGroup";
@@ -20,34 +18,39 @@ import Chip from "@mui/material/Chip";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Link from "@mui/material/Link";
+import Modal from "@mui/material/Modal";
+import Slider from "@mui/material/Slider";
 import Stack from "@mui/material/Stack";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
-import {useState} from "react";
-import MiniDrawer from "stories/Drawer/Drawers/MiniVariant";
-import { BasicPagination, PaginationOutlined, PaginationRounded } from "stories/Pagination/Pagination.stories";
-import DialogStories, { MuiDialog } from "stories/Dialog/Dialog.stories";
+import { useState } from "react";
+import { MuiDialog } from "stories/Dialog/Dialog.stories";
 import { MiddleDividers } from "stories/Divider/Divider.stories";
-import { ProgressLinear } from "stories/Progress/Progess.stories";
+import {
+  BasicPagination,
+  PaginationOutlined,
+  PaginationRounded,
+} from "stories/Pagination/Pagination.stories";
 import { SimplePaper } from "stories/Paper/examples";
-import { RadioButtons, RadioButtonsGroup } from "stories/RadioButton/RadioButton.stories";
-import RatingStories, { BasicRating } from "stories/Rating/Rating.stories";
-import SelectStories from "stories/Select/Select.stories";
-import Select from "theme/overrides/Select";
+import { ProgressLinear } from "stories/Progress/Progess.stories";
+import {
+  RadioButtons,
+  RadioButtonsGroup,
+} from "stories/RadioButton/RadioButton.stories";
 import { SelectC } from "stories/Select/Select";
-import SkeletonStories, { YouTube, Variants } from "stories/Skeleton/Skeleton.stories";
-import Skeleton from "theme/overrides/Skeleton";
+import { Variants } from "stories/Skeleton/Skeleton.stories";
 import { SimpleSnackbar } from "stories/Snackbar/Snackbar.stories";
+import { HorizontalLinearStepper } from "stories/Stepper/Stepper.stories";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 const style = {
-  position: 'absolute' as 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
+  position: "absolute" as "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
   width: 400,
-  bgcolor: 'background.paper',
-  borderRadius: '4px',
+  bgcolor: "background.paper",
+  borderRadius: "4px",
   boxShadow: 24,
   pt: 2,
   px: 4,
@@ -360,9 +363,10 @@ export default function Index() {
           min={10}
           max={110}
         />
-       </Stack>
+      </Stack>
       <Slider defaultValue={30} step={10} marks min={10} max={110} disabled />
       <SimpleSnackbar />
+      <HorizontalLinearStepper />
       {/* <MiniDrawer /> */}
     </div>
   );
