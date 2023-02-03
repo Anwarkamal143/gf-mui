@@ -14,12 +14,13 @@ import useSettings from "hooks/useSettings";
 //
 import { LocalizationProvider } from "@mui/x-date-pickers";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import type {} from "@mui/x-date-pickers/themeAugmentation";
 import breakpoints from "./breakpoints";
+import { commonTypography } from "./common";
+
 import componentsOverride from "./overrides";
 import palette, { defualtTheme } from "./palette";
 import shadows, { customShadows } from "./shadows";
-import typography from "./typography";
-import type {} from '@mui/x-date-pickers/themeAugmentation';
 
 // ----------------------------------------------------------------------
 
@@ -31,13 +32,16 @@ export default function ThemeProvider({ children }: IThemeProvider) {
   const { themeMode, themeDirection } = useSettings();
 
   const isLight = themeMode === "light";
+  const deftheme = defualtTheme(themeMode as ThemeModes);
 
   const themeOptions = useMemo(
     () => ({
       palette: isLight ? palette.light : palette.dark,
-      typography,
+      typography: isLight
+        ? { ...deftheme.typography, ...commonTypography }
+        : { ...deftheme.typography, ...commonTypography },
       breakpoints,
-      shape: { ...defualtTheme.shape },
+      shape: { ...deftheme.shape },
       direction: themeDirection,
       shadows: isLight ? shadows.light : shadows.dark,
       customShadows: isLight ? customShadows.light : customShadows.dark,
@@ -45,8 +49,9 @@ export default function ThemeProvider({ children }: IThemeProvider) {
     [isLight, themeDirection]
   );
 
-  const theme = createTheme(deepmerge(defualtTheme, themeOptions));
+  const theme = createTheme(deepmerge(deftheme, themeOptions));
   theme.components = componentsOverride(theme);
+  console.log({ theme });
   return (
     <StyledEngineProvider injectFirst>
       <MUIThemeProvider theme={theme}>

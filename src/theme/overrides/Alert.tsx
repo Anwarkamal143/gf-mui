@@ -1,4 +1,4 @@
-import { Theme } from '@mui/material/styles';
+import { Theme } from "@mui/material/styles";
 
 // ----------------------------------------------------------------------
 
@@ -17,21 +17,19 @@ export default function Alert(theme: Theme) {
 
   return {
     MuiAlert: {
-      defaultProps: {
-        iconMapping: {},
-      },
+      defaultProps: {},
 
       styleOverrides: {
         root: {
-          borderRadius: '4px',
+          borderRadius: "4px",
         },
         message: {
-          '& .MuiAlertTitle-root': {
+          "& .MuiAlertTitle-root": {
             // ...theme.components?.MuiAlertTitle
           },
         },
         action: {
-          '& button:not(:first-of-type)': {},
+          "& button:not(:first-of-type)": {},
         },
 
         // standardInfo: standardStyle("info"),

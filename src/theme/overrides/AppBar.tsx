@@ -3,18 +3,16 @@ import { Theme } from "@mui/material/styles";
 // ----------------------------------------------------------------------
 
 export default function AppBar(theme: Theme) {
-  const themeP = theme.palette
+  const themeP = theme.palette;
   return {
     MuiAppBar: {
-      defaultProps: {
-        iconMapping: {},
-      },
+      defaultProps: {},
 
       styleOverrides: {
         root: {
           background: themeP.primary.main,
           color: themeP.common.white,
-          boxShadow: 'none'
+          boxShadow: "none",
         },
         message: {
           "& .MuiAlertTitle-root": {

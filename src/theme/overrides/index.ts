@@ -17,7 +17,7 @@ import Chip from "./Chip";
 import ControlLabel from "./ControlLabel";
 import CssBaseline from "./CssBaseline";
 import DataGrid from "./DataGrid";
-import DatePicker from "./DatePicker";
+
 import Dialog from "./Dialog";
 import Drawer from "./Drawer";
 import Fab from "./Fab";
@@ -29,6 +29,7 @@ import Menu from "./Menu";
 import Modal from "./Modal";
 import Pagination from "./Pagination";
 import Paper from "./Paper";
+import PickersDay from "./PickersDay ";
 import Popover from "./Popover";
 import Progress from "./Progress";
 import Radio from "./Radio";
@@ -53,8 +54,8 @@ export default function ComponentsOverrides(theme: Theme) {
   return Object.assign(
     Modal(theme),
     Fab(theme),
+    PickersDay(theme),
     Tabs(theme),
-    DatePicker(theme),
     Chip(theme),
     AlertTitle(theme),
     Card(theme),
