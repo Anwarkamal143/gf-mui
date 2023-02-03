@@ -42,9 +42,9 @@ import ToggleButton from "./ToggleButton";
 import Tooltip from "./Tooltip";
 import TreeView from "./TreeView";
 import Typography from "./Typography";
-import ButtonBase from "./ButtonBase"
-import AppBar from "./AppBar"
-import Modal from "./Modal"
+import ButtonBase from "./ButtonBase";
+import AppBar from "./AppBar";
+import Modal from "./Modal";
 
 // ----------------------------------------------------------------------
 
