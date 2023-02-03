@@ -2,12 +2,14 @@ import { Palette } from '@mui/material/styles';
 import { commonPalleteColors } from 'theme/common';
 import { defualtTheme } from 'theme/palette';
 
-const defaultPalette = defualtTheme.palette;
+const defaultPalette = defualtTheme('dark').palette;
 
 export const darkPallete: Palette = {
   ...defaultPalette,
   mode: 'dark',
+
   primary: {
+    ...defaultPalette.primary,
     main: 'rgba(140, 59, 45, 1)',
     light: 'rgba(151, 78, 65, 1)',
     dark: 'rgba(112, 47, 36, 1)',
@@ -22,6 +24,7 @@ export const darkPallete: Palette = {
     },
   },
   secondary: {
+    ...defaultPalette.secondary,
     main: 'rgba(10, 140, 164, 1)',
     light: 'rgba(34, 151, 173, 1)',
     dark: 'rgba(10, 140, 164, 1)',
@@ -35,6 +38,7 @@ export const darkPallete: Palette = {
     },
   },
   error: {
+    ...defaultPalette.error,
     main: 'rgba(211, 47, 175, 1)',
     light: 'rgba(218, 94, 192, 1)',
     dark: 'rgba(180, 40, 149, 1)',
@@ -50,6 +54,7 @@ export const darkPallete: Palette = {
   },
 
   warning: {
+    ...defaultPalette.warning,
     main: 'rgba(161, 146, 5, 1)',
     light: 'rgba(180, 169, 63, 1)',
     dark: 'rgba(137, 124, 4, 1)',
@@ -64,6 +69,7 @@ export const darkPallete: Palette = {
     },
   },
   success: {
+    ...defaultPalette.success,
     main: 'rgba(18, 166, 25, 1)',
     light: 'rgba(72, 184, 78, 1)',
     dark: 'rgba(15, 141, 21, 1)',
@@ -79,6 +85,7 @@ export const darkPallete: Palette = {
   },
 
   info: {
+    ...defaultPalette.info,
     main: 'rgba(10, 140, 164, 1)',
     light: 'rgba(34, 151, 173, 1)',
     dark: 'rgba(9, 119, 140, 1)',
@@ -93,6 +100,7 @@ export const darkPallete: Palette = {
     },
   },
   text: {
+    ...defaultPalette.text,
     primary: 'rgba(255, 255, 255, 1)',
     secondary: 'rgba(255, 255, 255, 0.7)',
     disabled: 'rgba(255, 255, 255, 0.5)',
@@ -117,7 +125,7 @@ export const darkPallete: Palette = {
     active: 'rgba(255, 255, 255, 0.56)',
   },
   background: {
-    ...defualtTheme.palette.background,
+    ...defaultPalette.background,
     default: 'rgba(18, 18, 18, 1)',
     paper: 'rgba(18, 18, 18, 1)',
   },
