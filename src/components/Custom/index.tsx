@@ -1,13 +1,4 @@
-import * as React from 'react';
-import Accordion from '@mui/material/Accordion';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-
-import Alert from '@mui/material/Alert';
-import AlertTitle from '@mui/material/AlertTitle';
-import Stack from '@mui/material/Stack';
+import * as React from "react";
 
 export default function Index() {
   const [expanded, setExpanded] = React.useState<string | false>(false);
@@ -19,7 +10,7 @@ export default function Index() {
 
   return (
     <div>
-        <div>
+      {/* <div>
         <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
             <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
@@ -110,7 +101,7 @@ export default function Index() {
         <AlertTitle>Success</AlertTitle>
         This is a success alert — <strong>check it out!</strong>
       </Alert>
-    </Stack>
+    </Stack> */}
     </div>
   );
 }

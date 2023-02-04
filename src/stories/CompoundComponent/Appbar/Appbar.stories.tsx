@@ -1,14 +1,14 @@
 import GridViewOutlinedIcon from "@mui/icons-material/GridViewOutlined";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
-import { Breadcrumbs, Link } from "@mui/material";
+import { Breadcrumbs, Grid, Link } from "@mui/material";
 import AlertTitle from "@mui/material/AlertTitle";
 import AppBarComp from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
 import InputBase from "@mui/material/InputBase";
 import Stack from "@mui/material/Stack";
-import Toolbar from "@mui/material/Toolbar";
 import { alpha, styled } from "@mui/material/styles";
+import Toolbar from "@mui/material/Toolbar";
 import { ComponentMeta } from "@storybook/react";
 import { ReactNode } from "react";
 const Search = styled(Box)(({ theme }) => ({
@@ -62,38 +62,42 @@ export const AppBar = (props: IAppBarProps) => {
   const menuId = "primary-search-account-menu";
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBarComp position="static">
-        <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="open drawer"
-            sx={{ mr: 2 }}
-          >
-            <KeyboardBackspaceIcon />
-          </IconButton>
-          <AlertTitle>{title}</AlertTitle>
-          <Stack direction={"row"} alignItems={"center"} ml="auto">
-            <Stack
-              direction={"row"}
-              alignItems={"center"}
-              display={{ xs: "none", md: "flex" }}
-            >
-              <Breadcrumbs aria-label="breadcrumb">
-                <Link underline="hover" color="inherit" href="/">
-                  MUI
-                </Link>
-                <Link
-                  underline="hover"
-                  color="inherit"
-                  href="/material-ui/getting-started/installation/"
-                >
-                  Core
-                </Link>
-              </Breadcrumbs>
+    <AppBarComp position="static">
+      <Toolbar>
+        <Grid container spacing={2} alignItems="center">
+          <Grid item xs={8} md={4}>
+            <Stack direction="row" alignItems="center">
+              <IconButton
+                size="large"
+                edge="start"
+                color="inherit"
+                aria-label="open drawer"
+              >
+                <KeyboardBackspaceIcon />
+              </IconButton>
+              <AlertTitle sx={{ mb: "0" }}>{title}</AlertTitle>
             </Stack>
+          </Grid>
+          <Grid
+            item
+            xs={4}
+            display={{ xs: "none", md: "flex" }}
+            justifyContent="center"
+          >
+            <Breadcrumbs aria-label="breadcrumb" color="white">
+              <Link underline="hover" href="/" color="white">
+                MUI
+              </Link>
+              <Link
+                underline="hover"
+                color="white"
+                href="/material-ui/getting-started/installation/"
+              >
+                Core
+              </Link>
+            </Breadcrumbs>
+          </Grid>
+          <Grid item xs={4} display="flex" justifyContent={"flex-end"}>
             <IconButton
               size="large"
               edge="end"
@@ -105,10 +109,10 @@ export const AppBar = (props: IAppBarProps) => {
             >
               <GridViewOutlinedIcon />
             </IconButton>
-          </Stack>
-        </Toolbar>
-      </AppBarComp>
-    </Box>
+          </Grid>
+        </Grid>
+      </Toolbar>
+    </AppBarComp>
   );
 };
 

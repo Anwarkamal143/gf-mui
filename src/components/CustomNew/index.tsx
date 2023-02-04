@@ -1,61 +1,5 @@
-import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-import GrainIcon from "@mui/icons-material/Grain";
-import HomeIcon from "@mui/icons-material/Home";
-import WhatshotIcon from "@mui/icons-material/Whatshot";
-import Autocomplete from "@mui/material/Autocomplete";
-import Avatar from "@mui/material/Avatar";
-import AvatarGroup from "@mui/material/AvatarGroup";
-import Box from "@mui/material/Box";
-import Breadcrumbs from "@mui/material/Breadcrumbs";
-import Button from "@mui/material/Button";
-import ButtonGroup from "@mui/material/ButtonGroup";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Checkbox from "@mui/material/Checkbox";
-import Chip from "@mui/material/Chip";
-import Container from "@mui/material/Container";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import FormGroup from "@mui/material/FormGroup";
-import Grid from "@mui/material/Grid";
-import Link from "@mui/material/Link";
-import Modal from "@mui/material/Modal";
-import Slider from "@mui/material/Slider";
-import Stack from "@mui/material/Stack";
-import Switch from "@mui/material/Switch";
-import TextField from "@mui/material/TextField";
-import Typography from "@mui/material/Typography";
 import { useState } from "react";
-import { MuiDialog } from "stories/BaseComponent/Dialog/Dialog.stories";
-import { MiddleDividers } from "stories/BaseComponent/Divider/Divider.stories";
-import { MultilineTextFields } from "stories/BaseComponent/Multiline/Multiline.stories";
-import {
-  BasicPagination,
-  PaginationOutlined,
-  PaginationRounded,
-} from "stories/BaseComponent/Pagination/Pagination.stories";
-import { SimplePaper } from "stories/BaseComponent/Paper/examples";
-import { ProgressLinear } from "stories/BaseComponent/Progress/Progess.stories";
-import {
-  RadioButtons,
-  RadioButtonsGroup,
-} from "stories/BaseComponent/RadioButton/RadioButton.stories";
-import { SelectC } from "stories/BaseComponent/Select/Select";
-import { Variants } from "stories/BaseComponent/Skeleton/Skeleton.stories";
-import { SimpleSnackbar } from "stories/BaseComponent/Snackbar/Snackbar.stories";
-import {
-  DotsMobileStepper,
-  HorizontalLinearStepper,
-} from "stories/BaseComponent/Stepper/Stepper.stories";
-import { CustomPaginationActionsTable } from "stories/BaseComponent/Table/Table.stories";
-import { BasicTabs } from "stories/BaseComponent/Tabs/Tabs.stories";
-import { AlternateTimeline } from "stories/BaseComponent/Timeline/Timeline.stories";
-import { ToggleButtons } from "stories/BaseComponent/ToggleButton/ToggleButton.stories";
-import { BasicTooltip } from "stories/BaseComponent/Tooltip/Tooltip.stories";
-import { MuiTransferList } from "stories/BaseComponent/TransferList/TransferList.stories";
-import { BasicTreeView } from "stories/BaseComponent/TreeView/TreeView.stories";
-import { SimpleTypography } from "stories/BaseComponent/Typography/Typography.stories";
+import { AppBar } from "stories/CompoundComponent/Appbar/Appbar.stories";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 const style = {
@@ -208,7 +152,7 @@ export default function Index() {
   };
   return (
     <div>
-      <Button onClick={handleOpen}>Open modal</Button>
+      {/* <Button onClick={handleOpen}>Open modal</Button>
       <Modal
         open={open}
         onClose={handleClose}
@@ -396,7 +340,8 @@ export default function Index() {
       <MuiTransferList />
       <BasicTreeView />
       <SimpleTypography />
-      {/* <MiniDrawer /> */}
+      <MiniDrawer /> */}
+      <AppBar />
     </div>
   );
 }
