@@ -15,7 +15,7 @@ import Custom from "components/Custom";
 import CustomNew from "components/CustomNew";
 import dayjs, { Dayjs } from "dayjs";
 import { useState } from "react";
-import { CustomPaginationActionsTable } from "stories/Table/Table.stories";
+import { CustomPaginationActionsTable } from "stories/BaseComponent/Table/Table.stories";
 import ThemeProvider from "theme";
 import ThemeSettings from "theme/settings";
 import "./App.css";

@@ -27,35 +27,35 @@ import Switch from "@mui/material/Switch";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import { useState } from "react";
-import { MuiDialog } from "stories/Dialog/Dialog.stories";
-import { MiddleDividers } from "stories/Divider/Divider.stories";
-import { MultilineTextFields } from "stories/Multiline/Multiline.stories";
+import { MuiDialog } from "stories/BaseComponent/Dialog/Dialog.stories";
+import { MiddleDividers } from "stories/BaseComponent/Divider/Divider.stories";
+import { MultilineTextFields } from "stories/BaseComponent/Multiline/Multiline.stories";
 import {
   BasicPagination,
   PaginationOutlined,
   PaginationRounded,
-} from "stories/Pagination/Pagination.stories";
-import { SimplePaper } from "stories/Paper/examples";
-import { ProgressLinear } from "stories/Progress/Progess.stories";
+} from "stories/BaseComponent/Pagination/Pagination.stories";
+import { SimplePaper } from "stories/BaseComponent/Paper/examples";
+import { ProgressLinear } from "stories/BaseComponent/Progress/Progess.stories";
 import {
   RadioButtons,
   RadioButtonsGroup,
-} from "stories/RadioButton/RadioButton.stories";
-import { SelectC } from "stories/Select/Select";
-import { Variants } from "stories/Skeleton/Skeleton.stories";
-import { SimpleSnackbar } from "stories/Snackbar/Snackbar.stories";
+} from "stories/BaseComponent/RadioButton/RadioButton.stories";
+import { SelectC } from "stories/BaseComponent/Select/Select";
+import { Variants } from "stories/BaseComponent/Skeleton/Skeleton.stories";
+import { SimpleSnackbar } from "stories/BaseComponent/Snackbar/Snackbar.stories";
 import {
   DotsMobileStepper,
   HorizontalLinearStepper,
-} from "stories/Stepper/Stepper.stories";
-import { CustomPaginationActionsTable } from "stories/Table/Table.stories";
-import { BasicTabs } from "stories/Tabs/Tabs.stories";
-import { AlternateTimeline } from "stories/Timeline/Timeline.stories";
-import { ToggleButtons } from "stories/ToggleButton/ToggleButton.stories";
-import { BasicTooltip } from "stories/Tooltip/Tooltip.stories";
-import { MuiTransferList } from "stories/TransferList/TransferList.stories";
-import { BasicTreeView } from "stories/TreeView/TreeView.stories";
-import { SimpleTypography } from "stories/Typography/Typography.stories";
+} from "stories/BaseComponent/Stepper/Stepper.stories";
+import { CustomPaginationActionsTable } from "stories/BaseComponent/Table/Table.stories";
+import { BasicTabs } from "stories/BaseComponent/Tabs/Tabs.stories";
+import { AlternateTimeline } from "stories/BaseComponent/Timeline/Timeline.stories";
+import { ToggleButtons } from "stories/BaseComponent/ToggleButton/ToggleButton.stories";
+import { BasicTooltip } from "stories/BaseComponent/Tooltip/Tooltip.stories";
+import { MuiTransferList } from "stories/BaseComponent/TransferList/TransferList.stories";
+import { BasicTreeView } from "stories/BaseComponent/TreeView/TreeView.stories";
+import { SimpleTypography } from "stories/BaseComponent/Typography/Typography.stories";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 const style = {
