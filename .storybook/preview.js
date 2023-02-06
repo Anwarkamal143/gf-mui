@@ -4,7 +4,13 @@ import {
   StyledEngineProvider,
   Paper,
 } from "@mui/material";
-
+import { HTML5Backend } from "react-dnd-html5-backend";
+import {
+  DndProvider,
+  MouseTransition,
+  TouchTransition,
+} from "react-dnd-multi-backend";
+import { TouchBackend } from "react-dnd-touch-backend";
 import { themes } from "@storybook/theming";
 import muiBrandTheme from "./MuiBrandTheme";
 
@@ -80,15 +86,33 @@ export const withMuiTheme = (Story, context) => {
   const { theme: themeKey } = context.globals;
   // only recompute the theme if the themeKey changes
   const theme = useTheme({ themeMode: themeKey, themeDirection: "ltr" });
-
+  const HTML5toTouchbackend = {
+    backends: [
+      {
+        id: "html5",
+        backend: HTML5Backend,
+        transition: MouseTransition,
+        preview: true,
+      },
+      {
+        id: "touch",
+        backend: TouchBackend,
+        options: { enableMouseEvents: true, delayTouchStart: 500, delay: 500 },
+        preview: true,
+        transition: TouchTransition,
+      },
+    ],
+  };
   return (
     <StyledEngineProvider injectFirst>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <Paper sx={{ p: 5 }} id="story-parent">
-          <Story />
-        </Paper>
-      </ThemeProvider>
+      <DndProvider options={HTML5toTouchbackend}>
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
+          <Paper sx={{ p: 5 }} id="story-parent">
+            <Story />
+          </Paper>
+        </ThemeProvider>
+      </DndProvider>
     </StyledEngineProvider>
   );
 };
